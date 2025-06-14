@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Auto Fill</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="../libs/pdf.js"></script>
+    <script src="../libs/mammoth.browser.min.js"></script>
+    <script src="popup-init.js"></script>
+  </head>
+  <body>
+    <div id="popup-container">
+      <h1>LinkedIn AutoFill Pro</h1>
+
+      <div class="form-section">
+        <h2 class="form-title">CV Yükle & Bilgileri Çıkar</h2>
+        <form id="cv-upload-form">
+          <label for="cv-file">CV Dosyanız (.pdf, .docx):</label>
+          <input type="file" id="cv-file" accept=".pdf,.doc,.docx" required />
+          <button type="submit">Yükle ve Bilgileri Doldur</button>
+        </form>
+        <div id="upload-status"></div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="form-title">Doldurulması Gereken Alanlar</h2>
+        <div id="required-fields">
+          <p>
+            Sayfadaki zorunlu alanları görmek için "Zorunlu Alanları Bul"
+            butonuna tıklayın.
+          </p>
+          <button id="find-required-btn" type="button">
+            Zorunlu Alanları Bul
+          </button>
+          <div id="required-fields-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

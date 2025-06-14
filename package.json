@@ -1,0 +1,22 @@
+{
+  "name": "linkedin-auto-fill-extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension that automatically fills job application forms on LinkedIn.",
+  "main": "src/background.js",
+  "scripts": {
+    "build": "echo 'Building the extension...'",
+    "test": "echo 'Running tests...'",
+    "start": "echo 'Starting the extension...'"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "linkedin",
+    "autofill"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "pdfjs-dist": "^2.16.105"
+  }
+}

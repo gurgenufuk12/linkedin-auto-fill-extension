@@ -1,0 +1,187 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 15px;
+    width: 380px; /* Daha geniş bir popup */
+    color: #333;
+}
+
+#popup-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0073b1; /* LinkedIn mavisi */
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: calc(100% - 22px); /* Padding'i hesaba kat */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d9de;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"] {
+    padding: 8px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus {
+    border-color: #0073b1;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 115, 177, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #0073b1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #005a8c;
+}
+
+#cv-upload-form,
+#auto-fill-form {
+    margin-bottom: 25px;
+}
+
+#upload-status {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #0073b1;
+    text-align: center;
+    min-height: 20px; /* İçerik olmasa bile yer kaplasın */
+}
+
+#extracted-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef3f8;
+    border: 1px solid #d1d9de;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#extracted-info b {
+    color: #0073b1;
+}
+
+/* Daha modern bir dosya yükleme butonu görünümü */
+input[type="file"]::file-selector-button {
+    background-color: #0073b1;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #005a8c;
+}
+
+/* Genel iyileştirmeler */
+.form-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+/* Zorunlu alanlar bölümü stilleri */
+#required-fields {
+    margin-top: 10px;
+}
+
+#find-required-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+#find-required-btn:hover {
+    background-color: #218838;
+}
+
+#required-fields-list {
+    margin-top: 15px;
+}
+
+#required-fields-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#required-fields-list li {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+#required-fields-list li strong {
+    color: #0073b1;
+    font-size: 14px;
+}
+
+#required-fields-list li small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+#required-fields-list h3 {
+    color: #0073b1;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
